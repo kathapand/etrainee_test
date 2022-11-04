@@ -24,6 +24,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
+      # Setup mkdocs in Python
+      - name: Setup mkdocs
+        run: pip install --upgrade pip && pip install -U mkdocs mkdocs-jupyter jupyter_contrib_nbextensions
 
       # Runs a single command using the runners shell
       - name: Build mkdocs pages
