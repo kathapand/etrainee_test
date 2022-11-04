@@ -1,0 +1,35 @@
+site_name: E-TRAINEE Course
+repo_url: https://3dtools.geog.uni-heidelberg.de/etrainee/etrainee
+docs_dir: course
+site_dir: site
+extra_javascript:
+    - assets\javascripts\quiz_evaluation.js
+theme:
+  logo: geO_BW.png
+  favicon: geO.png
+  name: material
+  palette:
+    primary: indigo
+    accent: cyan 
+  features:
+    - search.highlight
+use_directory_urls: false
+plugins:
+  - mkdocs-jupyter
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+nav:
+- 'Home': 'index.md'
+- 'Module 3': 
+    - 'Overview': 'module3/module3.md'
+    - 'Principles of 3D/4D geographic point clouds' : 
+        - 'Lesson' : 'module3/01_pointcloud_principles/01_pointcloud_principles.md'
+        - 'Exercise' : 'module3/01_pointcloud_principles/exercise/m3_theme1_exercise1.md'
+
+    
