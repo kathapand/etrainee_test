@@ -1,7 +1,7 @@
 site_name: E-TRAINEE Course
 repo_url: https://3dtools.geog.uni-heidelberg.de/etrainee/etrainee
-docs_dir: ../course
-site_dir: ../site
+docs_dir: course
+site_dir: site
 extra_javascript:
     - assets\javascripts\quiz_evaluation.js
 theme:
