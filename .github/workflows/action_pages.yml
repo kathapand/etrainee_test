@@ -30,8 +30,6 @@ jobs:
         run: pip install --upgrade pip && pip install -U mkdocs mkdocs-jupyter jupyter_contrib_nbextensions
 
       # Runs a single command using the runners shell
-      - name: Build mkdocs pages
-        run: cd mkdocs
-      - name: run
+      - name: Build and deploy mkdocs pages
         run: mkdocs gh-deploy --force
 
