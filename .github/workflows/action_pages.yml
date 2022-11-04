@@ -33,5 +33,5 @@ jobs:
       - name: Build mkdocs pages
         run: cd mkdocs
       - name: run
-        run: mkdocs gh-deploy
+        run: mkdocs gh-deploy --force
 
