@@ -31,4 +31,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build mkdocs pages
-        run: mkdocs gh-deploy --clean -f mkdocs/mkdocs.yml
+        run: mkdocs gh-deploy --clean -f mkdocs/mkdocs_ka_test.yml
